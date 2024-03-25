@@ -1,0 +1,34 @@
+
+
+<head>
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+				<meta charset="UTF-8">
+				<title>Edubook</title>
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="bc" id="topbar">
+												<h1 class="txe">Edubook 2</h1>
+												<h4 class="apresen">Apresentado por Eduardo Kenji Takemoto  </h4>
+
+							</div>
+
+	  <div id="paginas">
+    <a href="index.html" class="fa fa-angle-left"></a>
+    <a href="index2.html" class="fa fa-angle-right"></a>
+	</div>
+
+			<div id="box_finder"></div> <button class="corner_button_1 ensemble padrao1" id="corner_bt1" onclick="font_size(1)">+
+	   </button> <button class="corner_button_1 ensemble padrao1" id="corner_bt2" onclick="font_size(-1)">-</button> <button onclick="show_finder()" id="show_finder" class="ensemble padrao1">Procurar texto</button> <button class="corner_button padrao1 ensemble" onclick="alter_font()">Alterar fonte
+	   </button>
+
+	  <div class="rd2"  *ngFor="let mensagem of mensagem">
+	  <div class="name"><img src="./br_usr.png" class="ft_usr"><div class="nam">{{mensagem.user}}<br><span class="tempo">{{mensagem.created_at}}</span></div></div>
+		<div class="txt_b">
+      {{mensagem.text}}
+ </div></div>
